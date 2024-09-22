@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_lar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:background="@drawable/android_lar1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/test1"
+        android:gravity="top"
+        android:text="운동 시작하기"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="오늘날짜와시간"
+            android:id="@+id/time_date"
+            android:fontFamily="@font/test1"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:text="운동한횟수"
+            android:id="@+id/exercise_d_day"
+            android:fontFamily="@font/test1"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 운동"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/test1"
+        android:textSize="30dp"
+        android:layout_gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/exercise_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/test1"
+            android:gravity="center"
+            android:text="운동 정하러가기"
+            android:textSize="25dp"
+            android:textColor="#ccffffff" />
+        <Button
+            android:id="@+id/exercise_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/shadow"
+            android:visibility="invisible"
+            android:fontFamily="@font/test1"
+            android:gravity="center"
+            android:text="운동 시작하기"
+            android:textSize="25dp"
+            android:textColor="#ccffffff" />
+        <EditText
+            android:id="@+id/timer_textview"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="210dp"
+            android:inputType="number"
+            android:text="타이머"
+            android:visibility="invisible"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/test1"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#ccffffff"/>
+        <Button
+            android:id="@+id/timer_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="290dp"
+            android:visibility="invisible"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/test1"
+            android:gravity="center"
+            android:text="Go"
+            android:textSize="25dp"
+            android:textColor="#ccffffff" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/test1"
+                    android:textSize="20dp"
+                    android:text="과거의 운동기록을 보려면 날짜를 클릭해주세요"
+                    android:id="@+id/past_time_date"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/test1"
+                    android:textSize="15dp"
+                    android:id="@+id/past_data"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginTop="20dp"
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                tools:listitem="@layout/item_exercise">
+            </ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/finish_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/shadow"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:text="오늘 운동 저장"
+                    android:textSize="25dp"
+                    android:textColor="#ccffffff" />
+                <Button
+                    android:id="@+id/reset_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shadow"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:text="운동 비우기"
+                    android:textSize="25dp"
+                    android:textColor="#ccffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

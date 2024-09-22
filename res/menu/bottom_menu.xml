@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/second_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checked="false"
+        android:icon="@drawable/second_menu"
+        android:title="운동시작"
+        />
+    <item
+        android:id="@+id/third_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checked="false"
+        android:icon="@drawable/third_menu"
+        android:title="식단정리">
+    </item>
+    <item
+        android:id="@+id/first_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checked="false"
+        android:icon="@drawable/first_menu"
+        android:title="운동기록"
+        />
+    <item
+        android:id="@+id/fourth_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checked="false"
+        android:icon="@drawable/fourth_menu"
+        android:title="운동결정">
+    </item>
+</menu>

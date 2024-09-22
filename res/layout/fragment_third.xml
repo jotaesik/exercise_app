@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_lar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:background="@drawable/android_lar1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/test1"
+            android:gravity="top"
+            android:text="식단정리하기"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meal_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shadow"
+            android:text="식단 구성하기"
+            android:fontFamily="@font/test1"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#6667AB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/test1"
+        android:textColor="#ffffff"
+        android:id="@+id/food_input"/>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/test1"
+        android:text="저장"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/shadow"
+        android:id="@+id/food_button"/>
+
+
+</LinearLayout>

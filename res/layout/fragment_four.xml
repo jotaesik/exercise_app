@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_lar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:background="@drawable/android_lar1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/test1"
+        android:gravity="top"
+        android:text="운동 정하기"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/find_exercise"
+        android:layout_marginTop="10dp"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangle_13"
+        android:fontFamily="@font/test1"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="운동종목을 입력"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"></TextView>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        tools:listitem="@layout/item_exercise">
+    </ListView>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/test1"
+        android:text="확인 버튼"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/check_button"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/shadow"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_lar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:background="@drawable/android_lar1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/test1"
+                android:gravity="top"
+                android:text="운동기록 그래프"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="체중"
+                    android:textSize="20dp"
+                    android:background="@drawable/shadow"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/test1"/>
+                <EditText
+                    android:id="@+id/add_weight"
+                    android:layout_width="160dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_13"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:hint="체중을 입력"
+                    android:textSize="18dp" />
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:text="추가"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/weight_chart"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:text="골격근량"
+                    android:textSize="20dp"
+                    android:background="@drawable/shadow"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/test1"/>
+                <EditText
+                    android:id="@+id/add_muscle"
+                    android:layout_width="160dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_13"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:hint="골격근량을 입력"
+                    android:textSize="18dp" />
+                <Button
+                    android:id="@+id/add_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:text="추가"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/muscle_chart"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:text="체지방량"
+                    android:textSize="20dp"
+                    android:background="@drawable/shadow"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/test1"/>
+                <EditText
+                    android:id="@+id/add_test"
+                    android:layout_width="160dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_13"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:hint="체지방량을 입력"
+                    android:textSize="18dp" />
+                <Button
+                    android:id="@+id/add_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:text="추가"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/test_chart"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:text="기초대사량"
+                    android:textSize="20dp"
+                    android:background="@drawable/shadow"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/test1"/>
+                <EditText
+                    android:id="@+id/add_else"
+                    android:layout_width="160dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_13"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:hint="기초대샤량을 입력"
+                    android:textSize="18dp" />
+                <Button
+                    android:id="@+id/add_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow"
+                    android:fontFamily="@font/test1"
+                    android:gravity="center"
+                    android:text="추가"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/else_chart"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

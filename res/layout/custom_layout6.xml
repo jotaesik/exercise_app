@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:elevation="1dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/first_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6667AB"
+        android:fontFamily="@font/test1"
+        android:gravity="center"
+        android:text="칼로리 계산하기"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/second_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/test1"
+        android:gravity="center"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="성별을 정해주세요"
+        android:textColor="#676767"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group">
+        <RadioButton
+            android:fontFamily="@font/test1"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:id="@+id/first_button"
+            android:button="@null"
+            android:background="@drawable/checkbox_custom">
+        </RadioButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:fontFamily="@font/test1"
+            android:textSize="20dp"
+            android:text="남자"/>
+        <RadioButton
+            android:fontFamily="@font/test1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:id="@+id/second_button"
+            android:button="@null"
+            android:background="@drawable/checkbox_custom"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/test1"
+            android:text="여자"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/test1"
+        android:text="체중(kg),신장(cm),나이를 입력해주세요"
+        android:layout_gravity="center"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textColor="#676767"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:id="@+id/second"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/total_layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7.5dp"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:fontFamily="@font/test1"
+            android:id="@+id/first_check"
+
+            android:text="첫번째"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/second_check"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:visibility="gone"
+            android:fontFamily="@font/test1"
+            android:background="@null"
+            android:hint="체중"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7.5dp"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:fontFamily="@font/test1"
+            android:id="@+id/third_check"
+            android:text="세번째"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/fourth_check"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:fontFamily="@font/test1"
+            android:background="@null"
+            android:hint="신장"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7.5dp"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:fontFamily="@font/test1"
+            android:id="@+id/five_check"
+            android:text="다섯번째"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/six_check"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:fontFamily="@font/test1"
+            android:background="@null"
+            android:hint="나이"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7.5dp"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:fontFamily="@font/test1"
+            android:id="@+id/seven_check"
+            android:text="일곱번째"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:fontFamily="@font/test1"
+        android:id="@+id/eight_textview"
+        android:text="기초대사량이 표시됩니다"/>
+    <TextView
+        android:id="@+id/nine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/test1"
+        android:gravity="center"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:visibility="gone"
+        android:shadowRadius="1"
+        android:text="활동량을 선탁해주세요"
+        android:textColor="#676767"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/radio_group1">
+
+            <RadioButton
+                android:fontFamily="@font/test1"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:id="@+id/first_button1"
+                android:button="@null"
+                android:background="@drawable/checkbox_custom">
+            </RadioButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/test1"
+                android:textSize="20dp"
+                android:text="거의 좌식생활을 하고 운동안함"/>
+                <RadioButton
+                    android:fontFamily="@font/test1"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/second_button1"
+                    android:button="@null"
+                    android:background="@drawable/checkbox_custom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/test1"
+                    android:text="활동량이 보통이거나 주1~3회 운동"/>
+
+                <RadioButton
+                    android:fontFamily="@font/test1"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/third_button1"
+                    android:button="@null"
+                    android:background="@drawable/checkbox_custom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/test1"
+                    android:text="활동량이 다소 많거나 주 3~5회 운동"/>
+
+                <RadioButton
+                    android:fontFamily="@font/test1"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/fourth_button1"
+                    android:button="@null"
+                    android:background="@drawable/checkbox_custom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/test1"
+                    android:text="활동량이 많거나 주 6~7회 운동"/>
+
+                <RadioButton
+                    android:fontFamily="@font/test1"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/fifth_button1"
+                    android:button="@null"
+                    android:background="@drawable/checkbox_custom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/test1"
+                    android:text="활동량이 매우 많거나,거의 하루 2번 운동"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:fontFamily="@font/test1"
+        android:id="@+id/ten"
+        android:text="변경된 기초대사량이 표시됩니다"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/shadow"
+            android:elevation="1dp"
+            android:fontFamily="@font/test1"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shadow"
+            android:elevation="1dp"
+            android:fontFamily="@font/test1"
+            android:text="취소"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
