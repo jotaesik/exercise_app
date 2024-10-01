@@ -29,7 +29,25 @@
 
 ## 📂 **폴더 구조 (Folder Structure)**
 ```
-exercise_app/ ├── ppt 사진/ # 프로젝트 발표에 사용된 사진 폴더 ├── res/ # 리소스 파일 (이미지, XML 등) ├── AndroidManifest.xml # 안드로이드 메니페스트 파일 ├── Exercise.java # 운동 기능을 관리하는 클래스 ├── Food.java # 식단 기능을 관리하는 클래스 ├── Fragment_First.java # 첫 번째 프래그먼트 화면 ├── Fragment_Second.java # 두 번째 프래그먼트 화면 ├── Fragment_Third.java # 세 번째 프래그먼트 화면 ├── Fragment_Four.java # 네 번째 프래그먼트 화면 ├── Fragment_Five.java # 다섯 번째 프래그먼트 화면 ├── Global.java # 전역 변수 및 상수를 관리하는 클래스 ├── MainActivity.java # 메인 액티비티 ├── OnBackPressedListener.java # 뒤로가기 버튼 동작을 정의한 리스너 클래스 ├── SecondActivity.java # 두 번째 액티비티 화면 ├── termproject_ppt_real.pptx # 프로젝트 발표 자료 ├── 운동흐름_2단구조.jpg # 운동 흐름을 설명한 구조도 이미지 ├── 텀프로젝트 제안서.pdf # 프로젝트 제안서 파일 └── README.md # 프로젝트 설명 파일
+exercise_app/
+├── ppt 사진/ # 프로젝트 발표에 사용된 사진 폴더
+├── res/ # 리소스 파일 (이미지, XML 등)
+├── AndroidManifest.xml # 안드로이드 메니페스트 파일
+├── Exercise.java # 운동 기능을 관리하는 클래스
+├── Food.java # 식단 기능을 관리하는 클래스
+├── Fragment_First.java # 첫 번째 프래그먼트 화면
+├── Fragment_Second.java # 두 번째 프래그먼트 화면
+├── Fragment_Third.java # 세 번째 프래그먼트 화면
+├── Fragment_Four.java # 네 번째 프래그먼트 화면
+├── Fragment_Five.java # 다섯 번째 프래그먼트 화면
+├── Global.java # 전역 변수 및 상수를 관리하는 클래스
+├── MainActivity.java # 메인 액티비티
+├── OnBackPressedListener.java # 뒤로가기 버튼 동작을 정의한 리스너 클래스
+├── SecondActivity.java # 두 번째 액티비티 화면
+├── termproject_ppt_real.pptx # 프로젝트 발표 자료
+├── 운동흐름_2단구조.jpg # 운동 흐름을 설명한 구조도 이미지
+├── 텀프로젝트 제안서.pdf # 프로젝트 제안서 파일
+└── README.md # 프로젝트 설명 파일
 ```
 
 ## 💻 **기술 스택 및 개발 환경 (Tech Stack & Environment)**
